@@ -64,10 +64,11 @@ Copy the folder dual_diablo (contains the environment and RL agent files) & dual
 ```
 ### 🎥 Video Demonstrations - Simulation
 #### Training
-https://github.com/user-attachments/assets/d12772c0-b355-4d03-b25f-36ad19855c38
+https://github.com/user-attachments/assets/952ce4bc-7a30-4493-a7c0-d93f37e591a1
 
 #### Evaluation
-https://github.com/user-attachments/assets/61b01f4f-cc48-4c22-a974-04878ab8637e
+https://github.com/user-attachments/assets/4c6d47d7-918d-4ac7-a51b-fb5547412ac9
+
 
 
 
