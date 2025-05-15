@@ -58,9 +58,16 @@ Copy the folder dual_diablo (contains the environment and RL agent files) & dual
 ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py --task DualDiablo_Task_Simple --num_envs 4096 --headless
 ```
 
-### Running the Evaluation
+### Running the Evaluation (You can modify the paths and payload for testing)
 ```
 ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py --task DualDiablo_Task_Simple --num_envs 4 --checkpoint /home/Your_Directory/IsaacLab/logs/rsl_rl/dualdiablo_rsl_rl/2025-05-13_20-18-28/model_500.pt
 ```
 ### 🎥 Video Demonstrations - Simulation
-https://github.com/dhruvkm2402/Deep_Reinforcement_Learning_Multi_Robot_Payload_Transport/blob/main/Media/DualDiabloTraining_U.mp4
+#### Training
+https://github.com/user-attachments/assets/d12772c0-b355-4d03-b25f-36ad19855c38
+
+#### Evaluation
+https://github.com/user-attachments/assets/61b01f4f-cc48-4c22-a974-04878ab8637e
+
+
+
