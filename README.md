@@ -32,13 +32,14 @@ A demonstration repository showing:
 
 ---
 ## Important Files and Directories
-1. **dual_diablo - Contains the environment file and RL agent files
-2. **dual_diablo.py - Contains the actuator and additional configurations of the biped-wheeled robot in simulation
-3. **USD_DualDiablo - Contains the USD files of the payload and biped-wheeled robot 
+1. **dual_diablo** - Contains the environment file and RL agent files
+2. **dual_diablo.py** - Contains the actuator and additional configurations of the biped-wheeled robot in simulation
+3. **USD_DualDiablo** - Contains the USD files of the payload and biped-wheeled robot 
 
 ## 📁 Directory Structure
 
 Copy the folder dual_diablo (contains the environment and RL agent files) & dual_diablo.py (robot config file) in the IsaacLab directory as shown:
+```
 ── IsaacLab
     └── source
         ├── isaaclab_assets
@@ -49,7 +50,7 @@ Copy the folder dual_diablo (contains the environment and RL agent files) & dual
             └── isaaclab_tasks
                 └── direct
                     └── dual_diablo
-
+```
 🕹️ Running in Simulation
 ### Ensure the paths of waypoints/payload path is modified in the dual_diablo_env.py file and the USD path in dual_diablo.py file
 ### Running the training
