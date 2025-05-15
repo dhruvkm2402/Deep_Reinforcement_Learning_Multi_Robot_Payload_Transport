@@ -53,11 +53,11 @@ Copy the folder dual_diablo (contains the environment and RL agent files) & dual
 🕹️ Running in Simulation
 ### Ensure the paths of waypoints/payload path is modified in the dual_diablo_env.py file and the USD path in dual_diablo.py file
 ### Running the training
-'''
+''
 ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py --task DualDiablo_Task_Simple --num_envs 4096 --headless
-'''
+''
 
 ### Running the Evaluation
-'''
+''
 ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py --task DualDiablo_Task_Simple --num_envs 4 --checkpoint /home/Your_Directory/IsaacLab/logs/rsl_rl/dualdiablo_rsl_rl/2025-05-13_20-18-28/model_500.pt
-'''
+''
