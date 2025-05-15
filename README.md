@@ -63,25 +63,4 @@ Copy the folder dual_diablo (contains the environment and RL agent files) & dual
 ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py --task DualDiablo_Task_Simple --num_envs 4 --checkpoint /home/Your_Directory/IsaacLab/logs/rsl_rl/dualdiablo_rsl_rl/2025-05-13_20-18-28/model_500.pt
 ```
 ### 🎥 Video Demonstrations - Simulation
-```
-<table>
-  <tr>
-    <td>
-      <!-- Training video -->
-      <video controls width="320">
-        <source src="Media/DualDiabloTraining_U.mp4" type="video/mp4">
-        Your browser doesn’t support the video tag.
-      </video>
-      <p align="center"><strong>Sim Demo</strong></p>
-    </td>
-    <td>
-      <!-- Evaluation video -->
-      <video controls width="320">
-        <source src="Media/SimGradualSineS1_U.mp4" type="video/mp4">
-        Your browser doesn’t support the video tag.
-      </video>
-      <p align="center"><strong>Real-World Demo</strong></p>
-    </td>
-  </tr>
-  ```
-</table>
+[![Parallelized Training](Media/DualDiabloTraining_U.mp4)
