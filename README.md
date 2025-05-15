@@ -63,6 +63,7 @@ Copy the folder dual_diablo (contains the environment and RL agent files) & dual
 ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py --task DualDiablo_Task_Simple --num_envs 4 --checkpoint /home/Your_Directory/IsaacLab/logs/rsl_rl/dualdiablo_rsl_rl/2025-05-13_20-18-28/model_500.pt
 ```
 ### 🎥 Video Demonstrations - Simulation
+```
 <table>
   <tr>
     <td>
@@ -82,4 +83,5 @@ Copy the folder dual_diablo (contains the environment and RL agent files) & dual
       <p align="center"><strong>Real-World Demo</strong></p>
     </td>
   </tr>
+  ```
 </table>
