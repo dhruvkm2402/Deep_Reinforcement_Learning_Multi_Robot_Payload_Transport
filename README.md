@@ -16,7 +16,7 @@ A demonstration repository showing:
 
 2. **Workstation Requirements** 
    - GPU: NVIDIA RTX 30xx series or higher (≥16 GB VRAM) 
-   - CPU: 6-core Intel i7 / AMD Ryzen 5 or better
+   - CPU: Intel Core i7 (9th Generation) AMD Ryzen 7
    - RAM: ≥32 GB 
    - Ubuntu 22.04 LTS
 
