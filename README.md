@@ -1,5 +1,5 @@
 ## Deep Reinforcement Learning for Coordinated Payload Transport in Biped-Wheeled Robots
-Deep Reinforcement Learning for Coordinated Payload Transport in Biped-Wheeled Robots  A unified PyTorch-based framework that trains a single deep reinforcement learning (DRL) agent to coordinate two biped-wheeled robots for cooperative payload transport.
+Deep Reinforcement Learning (DRL) for Coordinated Payload Transport in Biped-Wheeled Robots  A unified kinematic model integrated PyTorch-based framework that trains a DRL agent to coordinate two biped-wheeled robots for cooperative payload transport.
 
 A demonstration repository showing:
 
@@ -69,6 +69,7 @@ https://github.com/user-attachments/assets/952ce4bc-7a30-4493-a7c0-d93f37e591a1
 #### Evaluation
 https://github.com/user-attachments/assets/4c6d47d7-918d-4ac7-a51b-fb5547412ac9
 
-
+## Real World Code
+To be uploaded soon!
 
 
