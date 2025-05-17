@@ -74,7 +74,7 @@ To be uploaded soon!
 
 If you find this research useful, kindly cite the paper
 ```
-@INPROCEEDINGS{unknown,
+@unknown{unknown,
 author = {Mehta, Dhruv and Joglekar, Ajinkya and Krovi, Venkat},
 year = {2024},
 month = {09},
