@@ -72,4 +72,15 @@ https://github.com/user-attachments/assets/4c6d47d7-918d-4ac7-a51b-fb5547412ac9
 ## Real World Code
 To be uploaded soon!
 
+If you find this research useful, kindly cite the paper
+```
+@INPROCEEDINGS{unknown,
+author = {Mehta, Dhruv and Joglekar, Ajinkya and Krovi, Venkat},
+year = {2024},
+month = {09},
+pages = {},
+title = {Deep Reinforcement Learning for Coordinated Payload Transport in Biped-Wheeled Robots},
+doi = {10.13140/RG.2.2.10251.71207/1}
+}
+```
 
