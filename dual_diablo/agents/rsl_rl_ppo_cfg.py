@@ -11,7 +11,7 @@ from isaaclab.utils import configclass
 @configclass
 class DualDiabloPPORunnerCfg(RslRlOnPolicyRunnerCfg):
     num_steps_per_env = 48
-    max_iterations = 1000
+    max_iterations = 500
     save_interval = 100
     experiment_name = "dualdiablo_rsl_rl"
     empirical_normalization = False
