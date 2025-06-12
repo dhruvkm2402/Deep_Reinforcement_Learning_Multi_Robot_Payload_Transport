@@ -72,7 +72,7 @@ https://github.com/user-attachments/assets/4c6d47d7-918d-4ac7-a51b-fb5547412ac9
 ## Real World Code
 To be uploaded soon!
 
-If you find this research useful, kindly cite the paper
+If you find this research useful, please consider citing the paper
 ```
 @unknown{unknown,
 author = {Mehta, Dhruv and Joglekar, Ajinkya and Krovi, Venkat},
