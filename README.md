@@ -87,7 +87,7 @@ The deployment is organized into three phases:
 - **Reflective markers:** ≥ 3 per rigid body (we use 4 for extra accuracy)
 
 ![OptiTrack Array](Images/Optitrack_Array.png)  
-*Figure 1: Camera layout*
+*Figure 1: Real-World Workflow*
 
 ![Reflective Marker Installation](Images/Markers.png)  
 *Figure 2: Markers on robot & payload (geometric center tracking)*
@@ -163,12 +163,15 @@ python3 teleop.py
 
 ## 3. DRL Interface Initialization
 
-Run the ONNX-based ROS interface (requires ONNX Runtime):
+Run the ONNX-based ROS interface in Real_World_Code folder on the robot or the workstation (requires ONNX Runtime):
 
 ```bash
 python3 Diablo_ROS_interface_ONNX_RSLRL.py
 ```
 This script subscribes to OptiTrack topics, feeds observations into your DRL model, and publishes the resulting body twists back to each robot.
+![Diablo Real World](Media/Diablo_Real-World.gif)  
+*Real World Video of Biped-Wheeled Robot: Diablo*
+
 
 If you find this research useful, please consider citing the paper
 ```
