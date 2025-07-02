@@ -69,8 +69,111 @@ https://github.com/user-attachments/assets/952ce4bc-7a30-4493-a7c0-d93f37e591a1
 #### Evaluation
 https://github.com/user-attachments/assets/4c6d47d7-918d-4ac7-a51b-fb5547412ac9
 
-## Real World Code
-To be uploaded soon!
+# Real-World Deployment
+
+The deployment is organized into three phases:
+
+1. **OptiTrack Setup**
+2. **Robot & Payload Setup**
+3. **DRL Interface Initialization**
+
+---
+
+## 1. OptiTrack Setup
+
+### Hardware
+
+- **Cameras:** 12 OptiTrack units arranged around the workspace  
+- **Reflective markers:** ≥ 3 per rigid body (we use 4 for extra accuracy)
+
+![OptiTrack Array](Images/Optitrack_Array.png)  
+*Figure 1: Real-World Workflow*
+
+![Reflective Marker Installation](Images/Markers.png)  
+*Figure 2: Markers on robot & payload (geometric center tracking)*
+
+### Software
+
+1. **Install ROS‑OptiTrack packages**  
+   Follow the [OptiTrack + ROS tutorial](https://tuw-cpsg.github.io/tutorials/optitrack-and-ros/).
+
+2. **Launch motion capture**  
+   ```bash
+   roslaunch mocap_optitrack mocap.launch
+   ```
+
+3. **Verify topics**  
+   ```bash
+   rostopic list
+   ```
+
+---
+
+## 2. Robot & Payload Setup
+
+> **Note:** Repeat for each robot, swapping in its specific IP, hostname, and topic names.
+
+### Prerequisites
+
+- ROS Noetic (ROS 1)  
+- Diablo ROS1 SDK
+
+### Install Diablo SDK
+
+```bash
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+git clone https://github.com/DDTRobot/diablo-sdk-v1.git
+cd ~/catkin_ws
+catkin_make
+```
+
+### Configure Environment
+
+Add to your `~/.bashrc` (replace `<robot_ip>` and `<network_ip>`):
+
+```bash
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+export ROS_HOSTNAME="<robot_ip>"
+export ROS_MASTER_URI="http://<network_ip>:11311"
+```
+
+### Update & Run Robot Code
+
+1. **C++ Controller**  
+   - File: `diablo-sdk-v1/example/movement_ctrl/main.cpp`  
+   - Swap in your `cmd_vel_ego` / `cmd_vel_follower` topics.  
+   (See `Diablo_Robot_Code/main.cpp` for reference.)
+
+2. **Python Teleop**  
+   - Script: `script/teleop.py`  
+   - Publishers: `DJ_teleop` (ego) and `DJ_teleop2` (follower)
+
+3. **Launch**
+
+```bash
+rosrun diablo_sdk movement_ctrl_example
+python3 teleop.py
+```
+
+- Press `k` for mid-height, `j` for full-height.
+
+---
+
+## 3. DRL Interface Initialization
+
+Run the ONNX-based ROS interface in Real_World_Code folder on the robot or the workstation (requires ONNX Runtime):
+
+```bash
+python3 Diablo_ROS_interface_ONNX_RSLRL.py
+```
+This script subscribes to OptiTrack topics, feeds observations into your DRL model, and publishes the resulting body twists back to each robot.
+
+
+![Diablo Real World](Media/Diablo_Real-World.gif)  
+*Real World Video of Biped-Wheeled Robot: Diablo*
+
 
 If you find this research useful, please consider citing the paper
 ```
