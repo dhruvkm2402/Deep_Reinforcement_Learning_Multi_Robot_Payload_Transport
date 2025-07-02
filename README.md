@@ -70,7 +70,11 @@ https://github.com/user-attachments/assets/952ce4bc-7a30-4493-a7c0-d93f37e591a1
 https://github.com/user-attachments/assets/4c6d47d7-918d-4ac7-a51b-fb5547412ac9
 
 ## Real World Code
-To be uploaded soon!
+The real-world deployment can be broken down into two phases:
+1. **OptiTrack Setup** - Our lab consists of 12 OptiTrack cameras for tracking the robots and the payload. We use the geometric center of each
+2. **Robot and Payload Setup** - Each robot is setup via ROS Noetic and the DRL receives commands via OptiTrack measurements and sends body twist to both the robots.
+The OptiTrack can be setup as shown in the figure below:
+![Real-World Workflow](Images/Optitrack_Array.png)
 
 If you find this research useful, please consider citing the paper
 ```
