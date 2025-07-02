@@ -169,6 +169,8 @@ Run the ONNX-based ROS interface in Real_World_Code folder on the robot or the w
 python3 Diablo_ROS_interface_ONNX_RSLRL.py
 ```
 This script subscribes to OptiTrack topics, feeds observations into your DRL model, and publishes the resulting body twists back to each robot.
+
+
 ![Diablo Real World](Media/Diablo_Real-World.gif)  
 *Real World Video of Biped-Wheeled Robot: Diablo*
 
